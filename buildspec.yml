@@ -28,4 +28,7 @@ phases:
 #      - aws s3 cp hello-world-web-app.zip s3://dgruploads-bucket
 artifacts:
   files:
-    - target/hello-world-web-app.war
+    - target/*.war
+    - scripts/*.sh
+    - appspec.yml
+    discard-paths: yes
