@@ -9,3 +9,4 @@ if [ -f "$FILE" ]; then
     mv "$FILE$DATE" 
 else
     cp -rf /opt/codedeploy-agent/deployment-root/*/*/deployment-archive/target/*.war /usr/local/tomcat/webapps/
+fi
