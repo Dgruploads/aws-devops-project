@@ -20,7 +20,7 @@ phases:
       - yum install git -y
       - yum install zip -y
       - yum install aws-cli -y
-      - aws s3 cp s3://dgruploads-bucket/ /tmp --recursive
+      - aws s3 cp s3://dgruploads-bucket/ . --recursive
       - mkdir scripts
       - cp copy.sh install_tomcat.sh start.sh stop.sh scripts
       - zip -r hello-world-web-app.zip appspec.yml scripts/ hello-world-web-app.war
