@@ -22,9 +22,10 @@ phases:
       - yum install aws-cli -y
       - aws s3 cp s3://dgruploads-bucket/ . --recursive
       - mkdir scripts
-      - cp copy.sh install_tomcat.sh start.sh stop.sh scripts
-      - zip -r hello-world-web-app.zip appspec.yml scripts/ Test/target/hello-world-web-app.war
-      - aws s3 cp hello-world-web-app.zip s3://dgruploads-bucket
+      - ls -l
+#      - cp copy.sh install_tomcat.sh start.sh stop.sh scripts
+#      - zip -r hello-world-web-app.zip appspec.yml scripts/ Test/target/hello-world-web-app.war
+#      - aws s3 cp hello-world-web-app.zip s3://dgruploads-bucket
 artifacts:
   files:
     - target/hello-world-web-app.war
