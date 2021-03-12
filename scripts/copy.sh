@@ -3,7 +3,7 @@
 # Please note this is an example copy path. You will need to change this according to the path on  your server.#
 ################################################################################################################
 FILE=/usr/local/tomcat/webapps/hello-world-web-app.war
-DATE=`date +%b-%d-%`
+DATE=`date +%b-%d-%y`
 if [ -f "$FILE" ]; then
     echo "$FILE exists"
     mv "$FILE$DATE" 
