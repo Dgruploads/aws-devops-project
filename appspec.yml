@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-  - location: scripts/install_tomcat.sh
+  - location: scripts/check_package.sh
     timeout: 300
     runas: root
   AfterInstall:
