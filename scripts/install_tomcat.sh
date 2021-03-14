@@ -13,7 +13,7 @@ if [ -f "$PACKAGE" ]; then
     mv "$PACKAGE" "$PACKAGE$DATE"
 fi
 
-if [ -f "$FILE" ]; then
+if [ -d "$FILE" ]; then
    echo "$FILE exists and will be deleted"
    rm -rf "$FILE"
 fi
